@@ -11,3 +11,8 @@ exports.findFifth = function (root) {
   return notesFlat[fifthIndex];
 
 };
+
+exports.findMinorThird = function (root) {
+
+
+};
