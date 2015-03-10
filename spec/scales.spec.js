@@ -10,6 +10,6 @@ describe('findFifth', function () {
 describe('findMinorThird', function () {
   it('should find the IIIb note from root', function () {
     var third = scales.findMinorThird('A');
-    expect(third).toBe('C');
+    expect(third).toBe('Db');
   });
 });
