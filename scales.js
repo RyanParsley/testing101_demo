@@ -2,22 +2,23 @@
 
 var notesFlat = ['A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab'];
 
+var noteFinder = function (root, degree){
+  var rootIndex = notesFlat.indexOf(root);
+  var needsWrap = rootIndex < (12 - degree);
+  var noteIndex = needsWrap ? rootIndex + degree : rootIndex + (degree - 12);
+
+  return notesFlat[noteIndex];
+
+};
+
 exports.findFifth = function (root) {
 
-  var rootIndex = notesFlat.indexOf(root);
-  var needsWrap = rootIndex < 5;
-  var fifthIndex = needsWrap ? rootIndex + 7 : rootIndex + 7 - 12;
-
-  return notesFlat[fifthIndex];
+  return noteFinder(root, 7);
 
 };
 
 exports.findMinorThird = function (root) {
 
-  var rootIndex = notesFlat.indexOf(root);
-  var needsWrap = rootIndex < 8;
-  var thirdIndex = needsWrap ? rootIndex + 4 : rootIndex + 4 - 12;
-
-  return notesFlat[thirdIndex];
+  return noteFinder(root, 4);
 
 };
