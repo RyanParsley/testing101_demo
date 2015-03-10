@@ -15,5 +15,9 @@ exports.findFifth = function (root) {
 };
 
 exports.findMinorThird = function (root) {
+  return noteFinder(root, 3);
+};
+
+exports.findMajorThird = function (root) {
   return noteFinder(root, 4);
 };
