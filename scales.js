@@ -8,17 +8,12 @@ var noteFinder = function (root, degree){
   var noteIndex = needsWrap ? rootIndex + degree : rootIndex + (degree - 12);
 
   return notesFlat[noteIndex];
-
 };
 
 exports.findFifth = function (root) {
-
   return noteFinder(root, 7);
-
 };
 
 exports.findMinorThird = function (root) {
-
   return noteFinder(root, 4);
-
 };
