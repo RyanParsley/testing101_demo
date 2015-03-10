@@ -1,8 +1,8 @@
-var calculator = require("../scales");
+var scales = require('../scales');
 
-describe("find-dominant", function () {
-  it("should find the V note from root", function () {
-    var dominant = scales.find-dominant(a);
-    expect(dominant).toBe(e);
+describe('findDominant', function () {
+  it('should find the V note from root', function () {
+    var dominant = scales.findDominant('A');
+    expect(dominant).toBe('E');
   });
 });
