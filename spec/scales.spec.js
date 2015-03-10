@@ -1,8 +1,8 @@
 var scales = require('../scales');
 
-describe('findDominant', function () {
+describe('findFifth', function () {
   it('should find the V note from root', function () {
-    var dominant = scales.findDominant('A');
-    expect(dominant).toBe('E');
+    var fifth = scales.findFifth('A');
+    expect(fifth).toBe('E');
   });
 });
